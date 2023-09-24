@@ -52,5 +52,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 [4] 	“The New York Times Company (NYT),” stockanalysis.com, Sept., 2023. [Online]. Available: https://stockanalysis.com/stocks/nyt/revenue/. [Accessed Sept. 12, 2023]. 
 
 [5] 	Z. Blumenfeld, “The Definitive Guide to Building a Predictive Model in Python, neo4j.com, Jun. 16, 2023. [Online]. Available: https://neo4j.com/blog/build-predictive-model-python/. [Accessed Sept. 17, 2023].  
-* [Link-to-MI1-Doc](https://docs.google.com/document/d/1utsMtB2bDIQX3fz7LK_I9ves920YAxxiQElVlCmu9ys/edit?usp=sharing)
-* [Link-to-MI2-Doc](https://github.com/matiassingers/awesome-readme](https://docs.google.com/document/d/1RaTlaMyAfhypTplMEkluhVozaZ-1d3DvAZYYkxy1Y_M/edit?usp=sharing)https://docs.google.com/document/d/1RaTlaMyAfhypTplMEkluhVozaZ-1d3DvAZYYkxy1Y_M/edit?usp=sharing)
+
+[Link-to-MI1-Doc](https://docs.google.com/document/d/1utsMtB2bDIQX3fz7LK_I9ves920YAxxiQElVlCmu9ys/edit?usp=sharing)
+
+[Link-to-MI2-Doc](https://github.com/matiassingers/awesome-readme](https://docs.google.com/document/d/1RaTlaMyAfhypTplMEkluhVozaZ-1d3DvAZYYkxy1Y_M/edit?usp=sharing)https://docs.google.com/document/d/1RaTlaMyAfhypTplMEkluhVozaZ-1d3DvAZYYkxy1Y_M/edit?usp=sharing)
