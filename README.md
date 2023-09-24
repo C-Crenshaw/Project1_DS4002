@@ -9,7 +9,7 @@ Last Updated: 09/24/2023
 
 MI3 deliverable for the first project cycle of DS 4002. <br />
 
-The objective of this project is to test whether there is an inverse relationship between the sentiment orientation of news articles and the profit revenues of news organizations, hypothesizing that more negative articles will lead to higher revenues. This project group will attempt to fulfill this objective by answering the questions To what extent do negative news headlines correlate with revenue generation? and Can the average yearly directionality of sentiment for a company’s news articles predict their annual revenue generation? The overall sentiment of a news company’s articles will be calculated to compare directional attitude scores with the overall pattern of revenue growth for the company through both a sentiment analysis and a predictive regression model. 
+The objective of this project is to test whether there is an inverse relationship between the sentiment orientation of news articles and the profit revenues of news organizations, hypothesizing that more negative articles will lead to higher revenues. This project group will attempt to fulfill this objective by answering the questions _To what extent do negative news headlines correlate with revenue generation? and Can the average yearly directionality of sentiment for a company’s news articles predict their annual revenue generation?_ The overall sentiment of a news company’s articles will be calculated to compare directional attitude scores with the overall pattern of revenue growth for the company through both a sentiment analysis and a predictive regression model. 
 
 ## Contents of the Repository
 
