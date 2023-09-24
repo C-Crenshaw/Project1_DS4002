@@ -1,1 +1,1 @@
-# Source Code Folder for Group 10 Project 1. 
+# Source Code Folder for Project 1
