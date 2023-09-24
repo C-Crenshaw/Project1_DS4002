@@ -38,7 +38,15 @@ code blocks for commands
 
 ## [Figures](https://github.com/C-Crenshaw/Project1_DS4002/tree/31af060ae50a6ab3334985967c7f2793b55dfb41/FIGURES)
 
+Currently in progress but will be finished during MI4. 
 
+| 	Title	 | 	Description	 | 
+| 	:-----:	 | 	:-----:	 |
+| 	Value1	| 	Value2	|
+| 	Value1	| 	Value2	| 
+| 	Value1	| 	Value2	| 
+| 	Value1	| 	Value2	| 
+| 	Value1	| 	Value2	| 
 
 ## [License](https://github.com/C-Crenshaw/Project1_DS4002/blob/19a904af31fb17d7c6a334f728b05b2a784e7304/LICENSE)
 
