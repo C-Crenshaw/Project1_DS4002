@@ -1,8 +1,8 @@
 # Exploring the Relationship Between Connotation of News Articles and Company Revenue Using Sentiment Analysis
 Group 10 <br />
-Project 1 Leader: Sujith Panchumarthy
-Members: Carson Crenshaw, Zoe Averill
-DS 4002 
+Project 1 Leader: Sujith Panchumarthy <br />
+Members: Carson Crenshaw, Zoe Averill <br />
+DS 4002 <br />
 Last Updated: 09/24/2023
 
 MI3 deliverable for the first project cycle of DS 4002.
