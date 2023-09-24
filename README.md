@@ -1,15 +1,15 @@
 # Exploring the Relationship Between Connotation of News Articles and Company Revenue Using Sentiment Analysis
 Group 10 <br />
-Project 1 Leader: Sujith Panchumarthy <br />
-Members: Carson Crenshaw, Zoe Averill <br />
+**Project 1 Leader:** Sujith Panchumarthy <br />
+**Members:** Carson Crenshaw, Zoe Averill <br />
 DS 4002 <br />
 Last Updated: 09/24/2023
 
-MI3 deliverable for the first project cycle of DS 4002.
-
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+MI3 deliverable for the first project cycle of DS 4002. <br />
+
+The objective of this project is to test whether there is an inverse relationship between the sentiment orientation of news articles and the profit revenues of news organizations, hypothesizing that more negative articles will lead to higher revenues. This project group will attempt to fulfill this objective by answering the questions To what extent do negative news headlines correlate with revenue generation? and Can the average yearly directionality of sentiment for a company’s news articles predict their annual revenue generation? The overall sentiment of a news company’s articles will be calculated to compare directional attitude scores with the overall pattern of revenue growth for the company through both a sentiment analysis and a predictive regression model. 
 
 ## Contents of the Repository
 
