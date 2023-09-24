@@ -38,7 +38,7 @@ code blocks for commands
 
 
 
-## License
+## [License](https://github.com/C-Crenshaw/Project1_DS4002/blob/19a904af31fb17d7c6a334f728b05b2a784e7304/LICENSE)
 
 This project is licensed under the MIT License - see the LICENSE.md file for details. 
 
