@@ -13,6 +13,8 @@ The objective of this project is to test whether there is an inverse relationshi
 
 ## Contents of the Repository
 
+The contents of this repository include the source code, data, figures, license, and references for MI3. 
+
 ## [SRC](https://github.com/C-Crenshaw/Project1_DS4002/tree/b1542e32aed9d06d4183589f6be21cb49bb49c3e/SRC)
 
 Source code folder. 
