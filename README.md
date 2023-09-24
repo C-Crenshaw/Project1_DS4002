@@ -43,7 +43,7 @@ code blocks for commands
 This project is licensed under the MIT License - see the LICENSE.md file for details. 
 
 ## References
-[1] 	A. Singh, “NYT Articles: 2.1M+ (2000-Present) Daily Updated,” kaggle.com, Sept., 2023. [Online]. Available: https://www.kaggle.com/datasets/aryansingh0909/nyt-articles-21m-2000-present. [Accessed Sept. 9, 2023]. 
+[1] 	A. Singh, “NYT Articles: 2.1M+ (2000-Present) Daily Updated,” kaggle.com, Sept., 2023. [Online]. Available: https://www.kaggle.com/datasets/aryansingh0909/nyt-articles-21m-2000-present. [Accessed Sept. 9, 2023]. <br />
 
 [2] 	S. Panchumarthy, “DS4002/Project 1,” Sept., 2023. [Online]. Available: https://github.com/vsp2fcs/DS4002/tree/main/Project%201. [Accessed Sept. 17, 2023]. 
 
