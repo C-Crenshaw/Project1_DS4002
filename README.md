@@ -34,7 +34,7 @@ code blocks for commands
 
 
 
-## Figures
+## [Figures](https://github.com/C-Crenshaw/Project1_DS4002/tree/31af060ae50a6ab3334985967c7f2793b55dfb41/FIGURES)
 
 
 
