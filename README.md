@@ -76,4 +76,4 @@ This project is licensed under the MIT License. See the LICENSE.md file for deta
 [5] 	Z. Blumenfeld, “The Definitive Guide to Building a Predictive Model in Python, neo4j.com, Jun. 16, 2023. [Online]. Available: https://neo4j.com/blog/build-predictive-model-python/. [Accessed Sept. 17, 2023].  
 
 ## Acknowledgments
-This README structure is adopted from @DomPizzie on Github. 
+This README structure is adopted from [@DomPizzie](https://gist.github.com/DomPizzie) on Github. 
