@@ -1,5 +1,5 @@
 # Exploring the Relationship Between Connotation of News Articles and Company Revenue Using Sentiment Analysis
-Group 10
+Group 10 <br />
 Project 1 Leader: Sujith Panchumarthy
 Members: Carson Crenshaw, Zoe Averill
 DS 4002 
