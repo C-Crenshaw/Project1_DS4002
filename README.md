@@ -74,3 +74,6 @@ This project is licensed under the MIT License. See the LICENSE.md file for deta
 [4] 	“The New York Times Company (NYT),” stockanalysis.com, Sept., 2023. [Online]. Available: https://stockanalysis.com/stocks/nyt/revenue/. [Accessed Sept. 12, 2023]. 
 
 [5] 	Z. Blumenfeld, “The Definitive Guide to Building a Predictive Model in Python, neo4j.com, Jun. 16, 2023. [Online]. Available: https://neo4j.com/blog/build-predictive-model-python/. [Accessed Sept. 17, 2023].  
+
+## Acknowledgments
+This README structure is adopted from @DomPizzie on Github. 
