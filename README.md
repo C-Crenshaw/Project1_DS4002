@@ -17,7 +17,7 @@ The contents of this repository include the source code, data, figures, license,
 
 ## [SRC](https://github.com/C-Crenshaw/Project1_DS4002/tree/b1542e32aed9d06d4183589f6be21cb49bb49c3e/SRC)
 
-Source code folder. 
+This section contains all the source code for the project. 
 
 ### Installing/Building Code
 
