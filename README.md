@@ -42,7 +42,7 @@ code blocks for commands
 
 ## [License](https://github.com/C-Crenshaw/Project1_DS4002/blob/19a904af31fb17d7c6a334f728b05b2a784e7304/LICENSE)
 
-This project is licensed under the MIT License - see the LICENSE.md file for details. 
+This project is licensed under the MIT License. See the LICENSE.md file for details. 
 
 ## References
 [Link-to-MI1-Doc](https://docs.google.com/document/d/1utsMtB2bDIQX3fz7LK_I9ves920YAxxiQElVlCmu9ys/edit?usp=sharing)
