@@ -36,13 +36,23 @@ code blocks for commands
 
 This section contains all of the data for this project. Data dictionaries are provided below and are organized by dataset. Relevant notes about use of data are also included. 
 
+The original dataset ('nyt-metadata.csv') is pulled from @aryansingh0909 on [Kaggle](https://www.kaggle.com/datasets/aryansingh0909/nyt-articles-21m-2000-present). This dataset contains a comprehensive collection of over 2.1 million articles from The New York Times spanning from January 1, 2000 to the present day [1]. The original dataset’s size is approximately 5 GB which was too large to handle and manipulate in any meaningful ways in a reasonable amount of time. As such, a random sample of roughly 1% was used which reduced the size to 6.12 MB. Due to the size of the original population, this is still a valid and representative sample size. The other major contributor to the size reduction was removing unnecessary columns which left 10 columns from the original 20. 
+
+The updated dataset ('cleaned-nyt-metadata.csv') is a cleaned version of the original and is largely used throughout the analysis. 
+
 | 	Column Name	 | 	Description	 | 	Data Type	 | 
 | 	:-----:	 | 	:-----:	 | 	:-----:	 |
+| 	headlines	| 	Title or heading of the article	| 	String	 | 
+| 	abstract	| 	Brief summary or description of the article's content	| 	String	 | 
 | 	Value1	| 	Value2	| 	Value3	 | 
 | 	Value1	| 	Value2	| 	Value3	 | 
 | 	Value1	| 	Value2	| 	Value3	 | 
 | 	Value1	| 	Value2	| 	Value3	 | 
 | 	Value1	| 	Value2	| 	Value3	 | 
+| 	Value1	| 	Value2	| 	Value3	 | 
+| 	Value1	| 	Value2	| 	Value3	 | 
+| 	Value1	| 	Value2	| 	Value3	 | 
+
 
 ## [Figures](https://github.com/C-Crenshaw/Project1_DS4002/tree/31af060ae50a6ab3334985967c7f2793b55dfb41/FIGURES)
 
