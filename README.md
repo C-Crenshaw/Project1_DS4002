@@ -26,10 +26,25 @@ This section contains all the source code for the project. All code has been con
 
 ### Usage
 
-* How to run the program
-* Step-by-step bullets
+* All necessary imports are loaded into the 'Updated_Source_Code.py' file. These necessary packages are repeated below. These imports include the Natural Language Toolkit (NLTK) which is utilized for our sentiment analysis and the SK Learn package which is used for the regression model.  
 ```
-code blocks for commands
+#Standard imports
+import pandas as pd
+import numpy as np
+import random
+#Natural Language Toolkit (NLTK)
+import nltk
+nltk.download('all')
+#Other NLKT imports
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+#ML imports
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+from sklearn.preprocessing import MinMaxScaler
 ```
 
 ## [Data](https://github.com/C-Crenshaw/Project1_DS4002/tree/9814e54ec5d0e0119e89d199a6f0073ec55778e4/DATA)
