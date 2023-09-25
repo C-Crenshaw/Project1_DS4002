@@ -17,12 +17,12 @@ The contents of this repository include the source code, data, figures, license,
 
 ## [SRC](https://github.com/C-Crenshaw/Project1_DS4002/tree/b1542e32aed9d06d4183589f6be21cb49bb49c3e/SRC)
 
-This section contains all the source code for the project. 
+This section contains all the source code for the project. All code has been consolidated in one python/jupyter notebook file. The original source code can be found [online](https://colab.research.google.com/drive/1YPt-yQZR_OffM-WwLsKOsho0I5PVS_6A?usp=sharing). 
 
 ### Installing/Building Code
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* The code can be downloaded from the SRC file in either python or jupyter notebook format. The finalized and most updated version of the code file can be found online on Google Colaboratory. The link to this file is shared above.
+* The code file will generate all updated/cleaned dataframes outside of the original 'nyt-metadata.csv' and 'New York Times Revenue.xlsx' files that must be downloaded. Ensure that all file paths are updated in the downloaded file. 
 
 ### Usage
 
