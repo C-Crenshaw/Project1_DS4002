@@ -44,14 +44,14 @@ The updated dataset ('cleaned-nyt-metadata.csv') is a cleaned version of the ori
 | 	:-----:	 | 	:-----:	 | 	:-----:	 |
 | 	headlines	| 	Title or heading of the article	| 	String	 | 
 | 	abstract	| 	Brief summary or description of the article's content	| 	String	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
+| 	lead_paragraph	| 	Introductory paragraph of the article	| 	String	 | 
+| 	print_section	| 	Section in the print version of the newspaper where the article was published	| 	String/Integer	 | 
+| 	print_page	| 	Page number in the print version of the newspaper where the article was published	| 	Integer	 | 
+| 	pub_date	| 	Date the article was published	| 	Datetime	 | 
+| 	news_desk	| 	Department responsible for the article	| 	String	 | 
+| 	section_name	| 	Section or category of the article	| 	String	 | 
+| 	type_of_material	| 	Type of article	| 	String	 | 
+| 	word_count	| 	Number of words in the article	| 	Integer	 | 
 
 
 ## [Figures](https://github.com/C-Crenshaw/Project1_DS4002/tree/31af060ae50a6ab3334985967c7f2793b55dfb41/FIGURES)
