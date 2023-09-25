@@ -40,7 +40,8 @@ The original dataset ('nyt-metadata.csv') is pulled from @aryansingh0909 on [Kag
 
 The updated dataset ('cleaned-nyt-metadata.csv') is a cleaned version of the original and is largely used throughout the analysis. 
 
-| 	Column Name	 | 	Description	 | 	Data Type	 | 
+| cleaned-nyt-metadata.csv |
+| 	Column Name	 | 	Description	 | 	Data Type	 |  
 | 	:-----:	 | 	:-----:	 | 	:-----:	 |
 | 	headlines	| 	Title or heading of the article	| 	String	 | 
 | 	abstract	| 	Brief summary or description of the article's content	| 	String	 | 
