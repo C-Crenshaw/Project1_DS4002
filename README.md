@@ -26,6 +26,8 @@ This section contains all the source code for the project. All code has been con
 
 ### Usage
 
+The usage section focuses on the most complex aspects of the final code, highlighting the most important aspects of the final code. For brevity, this section largely leaves out the aspects of the file that involve cleaning the data. 
+
 * All necessary imports are loaded into the 'Updated_Source_Code.py' file. These necessary packages are repeated below. These imports include the Natural Language Toolkit (NLTK) which is utilized for our sentiment analysis and the SK Learn package which is used for the regression model.  
 ```
 #Standard imports
