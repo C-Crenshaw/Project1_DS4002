@@ -54,7 +54,7 @@ The updated dataset ('cleaned-nyt-metadata.csv') is a cleaned version of the ori
 | 	type_of_material	| 	Type of article	| 	String	 | 
 | 	word_count	| 	Number of words in the article	| 	Integer	 | 
 
-After running the sentiment analysis on the sample data, a new dataset is generated ('nyt-sentiment.csv'). 
+After running the sentiment analysis on the sample data, a new dataset is generated ('nyt-sentiment.csv'). <br /> 
 **nyt-sentiment.csv**
 | 	Column Name	 | 	Description	 | 	Data Type	 |  
 | 	:-----:	 | 	:-----:	 | 	:-----:	 |
@@ -71,7 +71,26 @@ After running the sentiment analysis on the sample data, a new dataset is genera
 | 	sentiment_direction	| 	Directionality of headline sentiment	| 	Integer	 | 
 | 	pub_year	| 	Publication year of the article	| 	Integer	 | 
 
-Annual New York Times revenue data is pulled from [StockAnalysis.com](https://stockanalysis.com/stocks/nyt/revenue/). This dataset is downloaded directly and stored in an excel formatting. 
+Annual New York Times revenue data ('New York Times Revenue.xlsx') is pulled from [StockAnalysis.com](https://stockanalysis.com/stocks/nyt/revenue/). This dataset is downloaded directly and stored in an excel formatting. 
+**New York Times Revenue.xlsx**
+| 	Column Name	 | 	Description	 | 	Data Type	 |  
+| 	:-----:	 | 	:-----:	 | 	:-----:	 |
+| 	Year	| 	End of fiscal year	| 	Datetime	 | 
+| 	Revenue (in Billions)	| 	NYT revenue generated that year	| 	Integer	 | 
+| 	Change (in Millions)	| 	Change in revenue between the present and previous year	| 	Integer	 | 
+| 	Growth	| 	Percentage change between present and previous year	| 	Integer	 | 
+| 	CPI	| 	Consumer Price Index	| 	Integer	 | 
+| 	Revenue_Adjusted (in 2022 dollars)	| 	NYT revenue adjusted for inflation	| 	Integer	 | 
+
+The final NYT revenue and headline sentiment dataset ('nyt_sentiment_revenue.csv') is assembled from the previous datasets. Combining the NYT revenue data and the sentiment analysis run on the sample data, the new dataset is created and will be used in a regression analysis. This dataset will includes the year, NYT revenue, average sentiment score for each component, and the direction of attitude for each year (2000-2022). 
+**nyt_sentiment_revenue.csv**
+| 	Column Name	 | 	Description	 | 	Data Type	 |  
+| 	:-----:	 | 	:-----:	 | 	:-----:	 |
+| 	Year	| 	End of fiscal year	| 	Integer	 | 
+| 	compound_sentiment	| 	Aggregate degree of headline sentiment	| 	Integer	 | 
+| 	sentiment_direction	| 	Directionality of headline sentiment	| 	Integer	 | 
+| 	Adjusted 2022 Revenue in Billions USD	| 	NYT revenue adjusted for inflation	| 	Integer	 | 
+
 
 ## [Figures](https://github.com/C-Crenshaw/Project1_DS4002/tree/31af060ae50a6ab3334985967c7f2793b55dfb41/FIGURES)
 
