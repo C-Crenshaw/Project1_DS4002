@@ -213,6 +213,8 @@ Note: This section is currently in progress. The regression equation has been ru
 | 	Figure Title	 | 	Description	 | 
 | 	:-----:	 | 	:-----:	 |
 | 	Scatterplot of all Sentiment Scores	| 	TBD	| 
+| 	Scatterplot of Revenue and Compound Scores	| 	Raw comparison between NYT yearly revenue and average compound scores. 	| 
+| 	Scatterplot of Revenue and Sentiment Direction	| 	Raw comparison between NYT yearly revenue and average directionality of sentiment.	| 
 | 	Regression Comparison between Training and Test Data	| 	TBD	|
 | 	Predicting Revenue for 2023	| 	TBD	| 
 
