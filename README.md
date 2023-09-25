@@ -38,9 +38,9 @@ This section contains all of the data for this project. Data dictionaries are pr
 
 The original dataset ('nyt-metadata.csv') is pulled from @aryansingh0909 on [Kaggle](https://www.kaggle.com/datasets/aryansingh0909/nyt-articles-21m-2000-present). This dataset contains a comprehensive collection of over 2.1 million articles from The New York Times spanning from January 1, 2000 to the present day [1]. The original dataset’s size is approximately 5 GB which was too large to handle and manipulate in any meaningful ways in a reasonable amount of time. As such, a random sample of roughly 1% was used which reduced the size to 6.12 MB. Due to the size of the original population, this is still a valid and representative sample size. The other major contributor to the size reduction was removing unnecessary columns which left 10 columns from the original 20. 
 
-The updated dataset ('cleaned-nyt-metadata.csv') is a cleaned version of the original and is largely used throughout the analysis. 
+The updated dataset ('cleaned-nyt-metadata.csv') is a cleaned version of the original and is largely used throughout the analysis. Within the python file it is used/uploaded in excel format, but can also be downloaded as a .csv when cleaned. 
 
-| cleaned-nyt-metadata.csv |
+**cleaned-nyt-metadata.csv**
 | 	Column Name	 | 	Description	 | 	Data Type	 |  
 | 	:-----:	 | 	:-----:	 | 	:-----:	 |
 | 	headlines	| 	Title or heading of the article	| 	String	 | 
@@ -54,6 +54,24 @@ The updated dataset ('cleaned-nyt-metadata.csv') is a cleaned version of the ori
 | 	type_of_material	| 	Type of article	| 	String	 | 
 | 	word_count	| 	Number of words in the article	| 	Integer	 | 
 
+After running the sentiment analysis on the sample data, a new dataset is generated ('nyt-sentiment.csv'). 
+**nyt-sentiment.csv**
+| 	Column Name	 | 	Description	 | 	Data Type	 |  
+| 	:-----:	 | 	:-----:	 | 	:-----:	 |
+| 	headlines	| 	Title or heading of the article	| 	String	 | 
+| 	abstract	| 	Brief summary or description of the article's content	| 	String	 | 
+| 	lead_paragraph	| 	Introductory paragraph of the article	| 	String	 | 
+| 	print_section	| 	Section in the print version of the newspaper where the article was published	| 	String/Integer	 | 
+| 	print_page	| 	Page number in the print version of the newspaper where the article was published	| 	Integer	 | 
+| 	pub_date	| 	Date the article was published	| 	Datetime	 | 
+| 	news_desk	| 	Department responsible for the article	| 	String	 | 
+| 	section_name	| 	Section or category of the article	| 	String	 | 
+| 	type_of_material	| 	Type of article	| 	String	 | 
+| 	compound_sentiment	| 	Aggregate degree of headline sentiment	| 	Integer	 | 
+| 	sentiment_direction	| 	Directionality of headline sentiment	| 	Integer	 | 
+| 	pub_year	| 	Publication year of the article	| 	Integer	 | 
+
+Annual New York Times revenue data is pulled from [StockAnalysis.com](https://stockanalysis.com/stocks/nyt/revenue/). This dataset is downloaded directly and stored in an excel formatting. 
 
 ## [Figures](https://github.com/C-Crenshaw/Project1_DS4002/tree/31af060ae50a6ab3334985967c7f2793b55dfb41/FIGURES)
 
