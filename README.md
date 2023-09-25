@@ -32,19 +32,111 @@ This section contains all the source code for the project. All code has been con
 import pandas as pd
 import numpy as np
 import random
+
 #Natural Language Toolkit (NLTK)
 import nltk
 nltk.download('all')
+
 #Other NLKT imports
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
+
 #ML imports
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import MinMaxScaler
+```
+
+* The sentiment analysis is run through a text processing function. The function codes for lexical and syntactic features of the news headlines (such as positive or negative words) and assigns each article a compound sentiment score. This score indicates the strength of emotion within each article headline. We then create an additional variable which codes the directionality of the sentiment score. This numerical score will falls between -1 and 1, with zero indicating neutrality.
+```
+#Text preprocessing function
+def textPreprocess(string):
+  #Tokenizing text
+  tokens = word_tokenize(string.lower())
+
+  #Removing stop words
+  filteredTokens = [token for token in tokens if token not in stopwords.words("english")]
+
+  #Lemmatizing tokens
+  lemmatizer = WordNetLemmatizer()
+  lemmatizedTokens = [lemmatizer.lemmatize(token) for token in filteredTokens]
+
+  #Joining tokens back together
+  processedString = ' '.join(lemmatizedTokens)
+
+  return processedString
+
+#Initializing NLTK sentiment analyzer
+analyzer = SentimentIntensityAnalyzer()
+
+#Sentiment fetching function
+def sentimentFetch(string):
+  scores = analyzer.polarity_scores(string)
+  sentiment = scores["compound"]
+  return sentiment
+
+#Process headlines and create new sentiment column
+nyt["compound_sentiment"] = nyt["headlines"].apply(textPreprocess).apply(sentimentFetch)
+#26s runtime
+
+#Positive, neutral, or negative sentiment definer function
+def compoundToDirection(score):
+  if score >= 0.05:
+    return 1
+  elif score <= -0.05:
+    return -1
+  return 0
+```
+
+* As a final usage note, machine learning is used to build a regression model based on sentiment and yearly revenue. Machine learning functions as a result of splitting the final dataset into training and test data. The success of this model will be represented in the graphs currently being assembled and will be finalized at the end of MI4. 
+```
+#Divide into X & y
+X = nyt_ml.drop(columns=["Adjusted 2022 Revenue in Billions USD"])
+y = nyt_ml["Adjusted 2022 Revenue in Billions USD"]
+
+#Find averages of MSE, RMSE, and beta coefficients for 1000 models - 6s runtime
+mse_avg = 0
+rmse_avg = 0
+beta1_arr = []
+beta2_arr = []
+intercept_avg = 0
+for i in range(1000):
+  #Split data
+  X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3)
+  #Create and train model
+  mult_reg = LinearRegression()
+  mult_reg.fit(X_train,y_train)
+
+  #Generate Predictions
+  predicted = mult_reg.predict(X_test)
+  actual = np.array(y_test)
+
+  #MSE & RMSE
+  mse = mean_squared_error(predicted,actual)
+  mse_avg += mse
+  rmse = mean_squared_error(predicted,actual,squared=False)
+  rmse_avg += rmse
+
+  #Beta Coefficients
+  coef = mult_reg.coef_
+  beta1_arr.append(coef[0])
+  beta2_arr.append(coef[1])
+  intercept = mult_reg.intercept_
+  intercept_avg += intercept
+
+mse_avg /= 1000
+rmse_avg /= 1000
+print("Average MSE is", round(mse_avg,5), "and Average RMSE is", round(rmse_avg,5))
+
+#Average multiple linear regression equation
+beta1_avg = np.mean(beta1_arr)
+beta2_avg = np.mean(beta2_arr)
+intercept_avg /= 1000
+
+print("Adjusted 2022 Revenue in Billions USD =", round(beta1_avg,3),"*compound_sentiment +", round(beta2_avg,3),"*sentiment_direction +", round(intercept_avg,3))
 ```
 
 ## [Data](https://github.com/C-Crenshaw/Project1_DS4002/tree/9814e54ec5d0e0119e89d199a6f0073ec55778e4/DATA)
