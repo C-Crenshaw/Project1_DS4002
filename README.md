@@ -93,7 +93,7 @@ def compoundToDirection(score):
   return 0
 ```
 
-* As a final usage note, machine learning is used to build a regression model based on sentiment and yearly revenue. Machine learning functions as a result of splitting the final dataset into training and test data. The success of this model will be represented in the graphs currently being assembled and will be finalized at the end of MI4. 
+* Machine learning is used to build a regression model based on sentiment and yearly revenue. Machine learning functions as a result of splitting the final dataset into training and test data. 
 ```
 #Divide into X & y
 X = nyt_ml.drop(columns=["Adjusted 2022 Revenue in Billions USD"])
@@ -139,6 +139,15 @@ beta2_avg = np.mean(beta2_arr)
 intercept_avg /= 1000
 
 print("Adjusted 2022 Revenue in Billions USD =", round(beta1_avg,3),"*compound_sentiment +", round(beta2_avg,3),"*sentiment_direction +", round(intercept_avg,3))
+```
+
+* As a final note, the model is used to predict the adjusted revenue for the New York Times in 2023 based on the current sentiment scores of articles presently being published in 2023. 
+```
+#2023 sentiment (previously recorded in "ML Dataset Creation" section)
+sentiment2023
+
+predicted2023Revenue = beta1_avg * sentiment2023["compound_sentiment"][2023] + beta2_avg * sentiment2023["sentiment_direction"][2023] + intercept_avg
+print("The predicted adjusted 2022 revenue for 2023 is $", '{:,}'.format(round(predicted2023Revenue*1000000000,2)), u"\u00B1 $", '{:,}'.format(round(rmse_avg*1000000000,2)))
 ```
 
 ## [Data](https://github.com/C-Crenshaw/Project1_DS4002/tree/9814e54ec5d0e0119e89d199a6f0073ec55778e4/DATA)
