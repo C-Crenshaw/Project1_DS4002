@@ -186,7 +186,7 @@ After running the sentiment analysis on the sample data, a new dataset is genera
 | 	news_desk	| 	Department responsible for the article	| 	String	 | 
 | 	section_name	| 	Section or category of the article	| 	String	 | 
 | 	type_of_material	| 	Type of article	| 	String	 | 
-| 	compound_sentiment	| 	Aggregate degree of headline sentiment	| 	Integer	 | 
+| 	compound_sentiment	| 	Aggregate degree of headline sentiment (Absolute Value)	| 	Integer	 | 
 | 	sentiment_direction	| 	Directionality of headline sentiment	| 	Integer	 | 
 | 	pub_year	| 	Publication year of the article	| 	Integer	 | 
 
@@ -208,7 +208,7 @@ The final NYT revenue and headline sentiment dataset ('nyt_sentiment_revenue.csv
 | 	Column Name	 | 	Description	 | 	Data Type	 |  
 | 	:-----:	 | 	:-----:	 | 	:-----:	 |
 | 	Year	| 	End of fiscal year	| 	Integer	 | 
-| 	compound_sentiment	| 	Aggregate degree of headline sentiment	| 	Integer	 | 
+| 	compound_sentiment	| 	Aggregate degree/strength of headline sentiment	| 	Integer	 | 
 | 	sentiment_direction	| 	Directionality of headline sentiment	| 	Integer	 | 
 | 	Adjusted 2022 Revenue in Billions USD	| 	NYT revenue adjusted for inflation	| 	Integer	 | 
 
