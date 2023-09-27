@@ -136,6 +136,9 @@ nyt_s['pub_year'] = pd.to_datetime(nyt_s['pub_year'], errors='coerce')
 #Drop any NaT values resulting from coerced conversion
 nyt_s = nyt_s.dropna(axis=0,subset=['pub_year'])
 
+#Find absolute value of compound_sentiment so that it correlates to strength (directionality is recorded in sentiment_direction)
+nyt_s["compound_sentiment"] = nyt_s["compound_sentiment"].apply(abs)
+
 nyt_s.head()
 
 """###Revenue Dataset Cleaning"""
@@ -149,10 +152,17 @@ nyt_r.head()
 
 """##ML Dataset Creation"""
 
-#Groupby year and find average compount sentiment and sentiment direction -> strore into dataframe and join by year
+#Function for standardizing independent variables
+def standard_units(arr):
+    return (arr - np.mean(arr)) / np.std(arr)
+
+#Groupby year and find average of compound sentiment and sentiment direction -> strore into dataframe and join by year
 nyt_ml = nyt_s.groupby(nyt_s["pub_year"].dt.year)['compound_sentiment'].mean().to_frame().join(nyt_s.groupby(nyt_s["pub_year"].dt.year)['sentiment_direction'].mean().to_frame(), on="pub_year")
 
 print(nyt_ml.head())
+#Record 2023 compound_sentimnet and sentiment_direction
+sentiment2023 = nyt_ml.apply(standard_units).iloc[[23]]
+print(nyt_ml.apply(standard_units).tail())
 
 #Reset index so that Year is it's own column
 nyt_ml = nyt_ml.reset_index()
@@ -206,7 +216,7 @@ fig3.show()
 nyt_ml = nyt_ml.drop(columns=["Year"])
 
 #Scale data
-nyt_ml[["compound_sentiment","sentiment_direction"]] = MinMaxScaler().fit_transform(nyt_ml[["compound_sentiment","sentiment_direction"]])
+nyt_ml = nyt_ml.apply(lambda x: standard_units(x) if x.name in ["compound_sentiment","sentiment_direction"] else x)
 
 #Divide into X & y
 X = nyt_ml.drop(columns=["Adjusted 2022 Revenue in Billions USD"])
@@ -252,3 +262,11 @@ beta2_avg = np.mean(beta2_arr)
 intercept_avg /= 1000
 
 print("Adjusted 2022 Revenue in Billions USD =", round(beta1_avg,3),"*compound_sentiment +", round(beta2_avg,3),"*sentiment_direction +", round(intercept_avg,3))
+
+"""##Predictions"""
+
+#2023 sentiment (previously recorded in "ML Dataset Creation" section)
+sentiment2023
+
+predicted2023Revenue = beta1_avg * sentiment2023["compound_sentiment"][2023] + beta2_avg * sentiment2023["sentiment_direction"][2023] + intercept_avg
+print("The predicted adjusted 2022 revenue for 2023 is $", '{:,}'.format(round(predicted2023Revenue*1000000000,2)), u"\u00B1 $", '{:,}'.format(round(rmse_avg*1000000000,2)))
